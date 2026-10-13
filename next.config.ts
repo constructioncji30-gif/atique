@@ -1,18 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // your existing config...
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      config.plugins.push({
-        apply: (compiler: any) => {
-          compiler.hooks.done.tap("ForceExit", () => {
-            setTimeout(() => process.exit(0), 0);
-          });
-        },
-      });
-    }
-    return config;
+  /* config options here */
+  experimental: {
+    agentFeedback: true,
+  },
+  cacheComponents: true,
+  partialPrefetching: true,
+  turbopack: {
+    rules: {
+      "*.css": {
+        loaders: ["@tailwindcss/turbopack"],
+        as: "*.css",
+      },
+    },
   },
 };
 
