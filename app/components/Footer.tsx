@@ -66,10 +66,23 @@ export default function Footer() {
             <li>
               📞{" "}
               <a
-                href="tel:+966559030324"
+                href="tel:+966559030323"
                 className="hover:text-amber-500 transition"
               >
-                +966 55 903 0324
+                +966 55 903 0323
+                 
+              </a>
+             
+            </li>
+             <li>
+              📞{" "}
+             
+               <a
+                href="tel:+966563375187"
+                className="hover:text-amber-500 transition"
+              >
+                +966 56 3375187
+                
               </a>
             </li>
             <li>
