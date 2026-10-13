@@ -67,9 +67,9 @@ export default function Footer() {
               📞{" "}
               <a
                 href="tel:+966559030323"
-                className="hover:text-amber-500 transition"
+                className="hover:text-amber-500  transition"
               >
-                +966 55 903 0323
+                +966 55 903 0323 
                  
               </a>
              
